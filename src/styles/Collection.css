@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(252, 242, 255);
+}
+h1,h2,p, a{
+display: flex;
+justify-content: center;
+   color: rgb(216, 45, 93);
+}
+.collection-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ 
+}
+.collection-panel,
+.collection-panel img{
+    border-radius: 13px;
+}
+
+.collection-panel {
+    color:rgb(216, 45, 93);
+    width:27%;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(253, 210, 224);
+    border: 2px solid rgb(255, 184, 209)
+}
+
+.collection-panel img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
