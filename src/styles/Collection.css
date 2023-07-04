@@ -8,6 +8,9 @@ justify-content: center;
 }
 h1{
     font-size: 4em;
+    border: 2px solid rgb(255, 187, 198);
+    background-color: rgb(250, 188, 209);
+    border-radius: 20px;
 }
 
 h2{
@@ -30,9 +33,16 @@ h2{
     padding: 10px;
     margin: 5px;
     background-color: rgb(253, 210, 224);
-    border: 2px solid rgb(255, 184, 209)
+    border: 2px solid rgb(255, 184, 209);
+    transition: 300ms ease-in-out;
 }
 
+.collection-panel:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-in-out;
+    
+
+}
 .collection-panel img{
     width: 100%;
     aspect-ratio: 1/1;
@@ -47,12 +57,12 @@ h2{
 @keyframes transitionIn {
     from  {
         opacity: 0;
-        transform: rotateX(-10deg);
+        transform: translateX(-30px);
         filter: blur(100);
     }
     
     to{
         opacity: 1;
-        transform: rotateX(0);
+        transform: translateX(0);
     }
 }
